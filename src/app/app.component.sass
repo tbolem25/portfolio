@@ -1,13 +1,18 @@
 .navbar
+  width: 80%
   display: flex
   flex-direction: row
-  justify-content: space-around
   align-content: center
-  background-color: #80ffaa
-  padding: 2px
-  img
-    width: 12vw
-    height: 8vh
+  position: sticky
+  justify-content: space-between
+  margin: auto
+  h1
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%)
+    background-clip: text
+    color: transparent
+    font-family: Jenthill, sans-serif
+    margin-left: 5px
+    font-size: 2vw
   .nav-links
     display: flex
     flex-direction: row
@@ -16,45 +21,39 @@
     width: 50%
     a
       text-decoration: none
-      color: white
-      background-color: #ff944d
+      color: #05445E
       padding: 5px 10px
       border-radius: 5px
-      font-weight: bold
+      font-weight: bolder
+      font-size: 18px
+    a:hover
+      color: #3498db
 
 .welcome
-  position: relative
-  overflow: hidden
-  padding: 25px
-  width: 100%
-  video
-    width: 100%
-    height: auto
-    display: block
-    border-radius: 10px
-  .overlay-text
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-    h2
-      font-weight: bold
-      font-size: 2vw
-
-/* Media query for smaller screens */
-@media (max-width: 768px)
-.welcome
-  width: 100%
-.overlay-text
-  font-size: 8vw
-  border-radius: 4vw
+  display: flex
+  justify-content: center
+  align-content: center
+  flex-wrap: nowrap
+  width: 80%
+  height: auto
+  margin: 20px auto
+  color: #189AB4
+  background-color: #D4F1F4
+  padding: 15px
+  border-radius: 10px
+  .wel-text
+    display: flex
+    flex-direction: column
+    align-content: center
+    justify-content: center
+    width: 50%
+  img
+    width: 300px /* Adjust the width and height as needed */
+    height: 300px
+    border-radius: 50% /* Make it a circle by setting border-radius to 50% */
+    object-fit: cover
 
 #job-title
   color: white
   font-weight: bolder
   font-size: 3vw
-
-.intro
-  margin: 20px
-  background-color: #2F5061
-  color: white
