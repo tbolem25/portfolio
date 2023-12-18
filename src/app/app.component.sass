@@ -33,7 +33,7 @@
   display: flex
   justify-content: center
   align-content: center
-  flex-wrap: nowrap
+  flex-wrap: wrap
   width: 80%
   height: auto
   margin: 20px auto
@@ -47,13 +47,41 @@
     align-content: center
     justify-content: center
     width: 50%
+    h1
+      color: white
+      font-weight: bolder
+      font-size: 3vw
+    h2
+      font-weight: bold
+
   img
-    width: 300px /* Adjust the width and height as needed */
+    max-width: 300px /* Adjust the width and height as needed */
     height: 300px
     border-radius: 50% /* Make it a circle by setting border-radius to 50% */
     object-fit: cover
+  @media screen and (max-width: 600px)
+    img
+      display: none
 
-#job-title
-  color: white
-  font-weight: bolder
-  font-size: 3vw
+/* About me section*/
+.intro
+  width: 100%
+  height: auto
+  margin: 20px 0
+  padding: 15px 0
+  background-color: #508AA8
+  .intro-matter
+    width: 80%
+    margin: 25px auto
+    padding: 20px
+    border-radius: 10px
+    background-color: #C8E0F4
+    h1
+      text-align: center
+      font-weight: bolder
+      color: white
+    p
+      font-size: 18px
+
+/* Footer styles */
+
