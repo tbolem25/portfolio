@@ -1,11 +1,14 @@
 .navbar
+  // top: 0
+  // background-color: white
+  // position: sticky 
   width: 80%
   display: flex
   flex-direction: row
   align-content: center
-  position: sticky
   justify-content: space-between
   margin: auto
+  
   h1
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%)
     background-clip: text
@@ -33,7 +36,6 @@
   display: flex
   justify-content: center
   align-content: center
-  flex-wrap: wrap
   width: 80%
   height: auto
   margin: 20px auto
@@ -41,47 +43,80 @@
   background-color: #D4F1F4
   padding: 15px
   border-radius: 10px
+  gap: 10px
   .wel-text
     display: flex
     flex-direction: column
     align-content: center
     justify-content: center
-    width: 50%
+    padding-left: 50px
+    width: 60%
     h1
       color: white
       font-weight: bolder
-      font-size: 3vw
+      font-size: 4vw
     h2
       font-weight: bold
-
-  img
-    max-width: 300px /* Adjust the width and height as needed */
-    height: 300px
-    border-radius: 50% /* Make it a circle by setting border-radius to 50% */
-    object-fit: cover
-  @media screen and (max-width: 600px)
+      font-size: 3vw
+  .welcome-img
+    width: 40%    
     img
-      display: none
+      max-width: 300px 
+      height: 300px
+      border-radius: 50% 
+      object-fit: cover
+@media screen and (max-width: 600px)
+  .welcome
+    .welcome-text
+      width: 40%
+      padding-right: 20px
+    .welcome-img
+      width: 60%
+      img
+        width: 40vw
+        height: 19vh
+        border-radius: 50% 
+        object-fit: cover
 
 /* About me section*/
 .intro
   width: 100%
   height: auto
   margin: 20px 0
-  padding: 15px 0
-  background-color: #508AA8
+  padding: 15px 10px
+  display: inline-flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)
   .intro-matter
-    width: 80%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 50%
     margin: 25px auto
     padding: 20px
     border-radius: 10px
-    background-color: #C8E0F4
     h1
+      background: linear-gradient(to right, #D16BA5 0%, #0089BA 100%)
+      background-clip: text
+      color: transparent
+      font-weight: bold
       text-align: center
-      font-weight: bolder
-      color: white
     p
-      font-size: 18px
+      background: white
+      border-radius: 8px
+      margin: 10px 0
+      font-size: 20px
+      padding: 10px
+  .intro-svg
+    width: 50%
+    img
+      width: 100%
+      height: auto
+      
 
 /* Footer styles */
-
+footer
+  

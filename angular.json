@@ -23,6 +23,7 @@
             "polyfills": [
               "zone.js"
             ],
+            "externalDependencies": ["assets/footer.png"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
