@@ -22,15 +22,20 @@
     justify-content: space-evenly
     align-content: center
     width: 50%
+    background-color: #52D3D8
+    border-radius: 5px
+    padding: 5px 10px
     a
       text-decoration: none
-      color: #05445E
+      color: #38200E
       padding: 5px 10px
       border-radius: 5px
       font-weight: bolder
       font-size: 18px
     a:hover
+      background-color: white
       color: #3498db
+      border: 10px
 
 .welcome
   display: flex
@@ -119,4 +124,33 @@
 
 /* Footer styles */
 footer
-  
+  width: 100%
+  height: auto
+  position: relative
+  img
+    width: 100%
+    height: 40vh
+    object-fit: fill
+  .footer-float
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    position: absolute
+    bottom: 0
+    left: 0
+    a
+      text-decoration: none
+      color: Black
+      font-weight: bold
+    .footer-links
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      padding: 60px 100px 20px
+      
+    .other-links
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      padding: 40px 80px
