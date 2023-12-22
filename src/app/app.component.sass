@@ -72,7 +72,7 @@
     flex-direction: column
     align-content: center
     justify-content: center
-    padding-left: 50px
+    padding-left: 20px
     width: 60%
     h1
       color: white
@@ -160,19 +160,72 @@
   justify-content: space-between
   gap: 10px
   align-items: center
-  margin: auto auto 20px
+  margin: 25px auto 20px
   .contact-details
     width: 40%
     background-color: #75E6DA
     padding: 40px 30px 
     border-radius: 10px
+    overflow: hidden
+    h1
+      font-weight: bold
+      font-size: 20px
+    a
+      text-decoration: none
+      color: Black
+      font-weight: bold
+      font-size: 18px
+    address
+      color: Black
+      font-weight: bold
+      font-size: 18px
     label
+      color: white
       font-weight: bold
   .contact-svg 
     width: 50%
     img
       width: 100%
+@media screen and (max-width:600px)
+  .contact
+    width: 80%
+    display: flex
+    justify-content: space-between
+    gap: 10px
+    align-items: center
+    margin: 25px auto 20px
+    .contact-details
+      width: 100%
+      padding: 40px 30px
+    .contact-svg
+      width: 0
+      img
+        display: none
+        width: 0
+
 
 /* Footer styles */
-
+footer
+  width: 100%
+  height: auto
+  position: relative
+  img
+    width: 100%
+    height: 40vh
+    object-fit: fill
+  .footer-float
+    width: 100%
+    display: flex
+    justify-content: space-around
+    position: absolute
+    bottom: 0
+    left: 0
+    a
+      text-decoration: none
+      color: Black
+      font-weight: bold
+    .footer-links
+      display: flex
+      flex-direction: column
+      padding: 60px 100px 20px
 
