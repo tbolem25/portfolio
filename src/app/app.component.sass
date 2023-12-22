@@ -14,7 +14,7 @@
     color: transparent
     font-family: Jenthill, sans-serif
     margin-left: 5px
-    font-size: 2vw
+    font-size: 2.5vw
     text-align: center
     margin: auto 
   .nav-links
@@ -45,6 +45,7 @@
     flex-wrap: wrap
     h1
       margin: 5px 5px 10px
+      font-size: 5vw
     .nav-links
       width: 80%  
       padding: 3px 10px
@@ -101,42 +102,56 @@
         object-fit: cover
 
 /* About me section*/
-.intro
-  width: 100%
-  height: auto
-  margin: 20px 0
-  padding: 15px 10px
-  display: inline-flex
-  flex-wrap: wrap
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
+.introduction
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)
-  .intro-matter
-    display: flex
-    flex-direction: column
+  h1
+    background: linear-gradient(to right, #D16BA5 0%, #0089BA 100%)
+    font-weight: bold
+    text-align: center
+    padding: 20px 0 
+  .intro
+    width: 100%
+    height: auto
+    margin: 20px 0
+    padding: 15px 10px
+    display: inline-flex
+    flex-wrap: wrap
+    flex-direction: row
     justify-content: space-between
-    width: 50%
-    margin: 25px auto
-    padding: 20px
-    border-radius: 10px
-    h1
-      background: linear-gradient(to right, #D16BA5 0%, #0089BA 100%)
-      background-clip: text
-      color: transparent
-      font-weight: bold
-      text-align: center
-    p
-      background: white
-      border-radius: 8px
-      margin: 10px 0
-      font-size: 20px
-      padding: 10px
-  .intro-svg
-    width: 50%
-    img
-      width: 100%
-      height: auto
+    align-items: center
+
+    .intro-matter
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 50%
+      margin: 25px auto
+      padding: 20px
+      border-radius: 10px
+      p
+        background: white
+        border-radius: 8px
+        margin: 10px 0
+        font-size: 20px
+        padding: 10px
+    .intro-svg
+      width: 50%
+      img
+        width: 100%
+        height: auto
+@media screen and (max-width: 600px)
+  .introduction  
+    .intro 
+      display: flex
+      flex-direction: column
+      .intro-svg
+        width: 90%
+        margin: auto
+      .intro-matter
+        width: 95%
+        margin: auto
+        ul
+          padding: 0
 
 /* Contact styles*/
 .contact 
