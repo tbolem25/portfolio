@@ -1,7 +1,7 @@
 .navbar
   // top: 0
   // background-color: transparent
-  // position: sticky 
+  // position: sticky
   width: 90%
   display: flex
   flex-direction: row
@@ -13,17 +13,16 @@
     background-clip: text
     color: transparent
     font-family: Jenthill, sans-serif
-    margin-left: 5px
     font-size: 2.5vw
     text-align: center
-    margin: auto 
+    margin: auto
   .nav-links
     display: flex
     flex-direction: row
     justify-content: space-evenly
     align-content: center
     width: 60%
-    background-color: #52D3D8
+    background-color: #189AB4
     border-radius: 5px
     padding: 5px 10px
     a
@@ -37,22 +36,6 @@
       background-color: white
       color: #3498db
       border: 10px
-@media screen and (max-width: 600px)
-  .navbar
-    display: flex
-    flex-direction: column
-    justify-content: center
-    flex-wrap: wrap
-    h1
-      margin: 5px 5px 10px
-      font-size: 5vw
-    .nav-links
-      width: 80%  
-      padding: 3px 10px
-      a
-        font-size: 11px
-        padding: 2px 5px
-
 
 /* Welcome section*/
 .welcome
@@ -62,13 +45,14 @@
   width: 90%
   height: auto
   margin: 20px auto
-  color: #189AB4
+  color: #05445E
   background-color: #D4F1F4
   padding: 15px
   border-radius: 10px
   gap: 10px
   flex-wrap: nowrap
   overflow: hidden
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   .wel-text
     display: flex
     flex-direction: column
@@ -86,57 +70,48 @@
       font-weight: bold
       font-size: 3vw
   .welcome-img
-    width: 40%    
+    width: 40%
     img
-      max-width: 300px 
+      max-width: 300px
       height: 300px
-      border-radius: 50% 
+      border-radius: 50%
       object-fit: cover
-@media screen and (max-width: 600px)
-  .welcome
-    .welcome-text
-      width: 40%
-      padding-right: 20px
-    .welcome-img
-      width: 60%
-      img
-        width: 40vw
-        height: 19vh
-        border-radius: 50% 
-        object-fit: cover
 
 /* About me section*/
 .introduction
   background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1)
-  
+  padding: 20px
+  margin: 30px auto 20px
   h1
-    background: linear-gradient(to right, #D16BA5 0%, #0089BA 100%)
-    font-weight: bold
+    color: aliceblue
+    font-family: Jenthill, sans-serif
     text-align: center
-    padding: 20px 0 
+    background-color: #05445E
+    border-radius: 5px
+    width: 30vw
+    margin: auto
+    padding: 10px 5px 0
   .intro
     width: 100%
     height: auto
-    margin: 20px 0
+    margin: 20px 0 0
     padding: 15px 10px
-    display: inline-flex
+    display: flex
     flex-wrap: wrap
-    flex-direction: row
     justify-content: space-between
     align-items: center
-
     .intro-matter
       display: flex
       flex-direction: column
       justify-content: space-between
       width: 50%
-      margin: 25px auto
-      padding: 20px
+      margin: auto
+      padding: 5px
       border-radius: 10px
       p
         background: white
         border-radius: 8px
-        margin: 10px 0
+        margin: 10px 0 0
         font-size: 20px
         padding: 10px
     .intro-svg
@@ -144,22 +119,9 @@
       img
         width: 100%
         height: auto
-@media screen and (max-width: 600px)
-  .introduction  
-    .intro 
-      display: flex
-      flex-direction: column
-      .intro-svg
-        width: 90%
-        margin: auto
-      .intro-matter
-        width: 95%
-        margin: auto
-        ul
-          padding: 0
 
 /* Contact styles*/
-.contact 
+.contact
   width: 90%
   display: flex
   justify-content: space-around
@@ -169,14 +131,15 @@
   margin: 25px auto 20px
   background-color: #cccccc
   border-radius: 10px
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   .contact-details
     width: 40%
-    background-color: 	#eeeeee
-    padding: 40px 30px 
+    background-color: #eeeeee
+    padding: 40px 30px
     border-radius: 10px
     overflow: hidden
     border: 2px solid black
-    animation: circle-in-hesitate 5s 
+    animation: circle-in-hesitate 5s
     h1
       font-weight: bold
       font-size: 4vw
@@ -198,29 +161,10 @@
           background-color: black
           color: white
           border-radius: 50%
-          
-
-  .contact-svg 
+  .contact-svg
     width: 50%
     img
       width: 100%
-@media screen and (max-width:600px)
-  .contact
-    width: 80%
-    display: flex
-    justify-content: space-between
-    gap: 10px
-    align-items: center
-    margin: 25px auto 20px
-    .contact-details
-      width: 100%
-      padding: 40px 30px
-    .contact-svg
-      width: 0
-      img
-        display: none
-        width: 0
-
 
 /* Footer styles */
 footer
@@ -234,10 +178,11 @@ footer
   .footer-float
     width: 100%
     display: flex
-    justify-content: space-around
+    justify-content: space-between
     position: absolute
     bottom: 0
     left: 0
+    padding: 10px 30px 10px 50px
     a
       text-decoration: none
       color: Black
@@ -245,15 +190,86 @@ footer
     .footer-links
       display: flex
       flex-direction: column
-      padding: 60px 100px 20px
 
-@keyframes circle-in-hesitate 
-  0% 
+/* Styles for Phone*/
+@media screen and (max-width: 600px)
+  .navbar
+    display: flex
+    flex-direction: column
+    justify-content: center
+    flex-wrap: wrap
+    h1
+      margin: 5px 5px 10px
+      font-size: 5vw
+    .nav-links
+      width: 80%
+      padding: 3px 10px
+      a
+        font-size: 11px
+        padding: 2px 5px
+  .welcome
+    .welcome-text
+      width: 40%
+      padding-right: 20px
+    .welcome-img
+      width: 60%
+      img
+        width: 40vw
+        height: 19vh
+        border-radius: 50%
+        object-fit: cover
+  .introduction
+    .intro
+      display: flex
+      flex-direction: column
+      .intro-svg
+        width: 90%
+        margin: auto
+      .intro-matter
+        width: 95%
+        margin: auto
+        ul
+          padding: 0
+  .contact
+    width: 80%
+    gap: 10px
+    margin: 25px auto 20px
+    .contact-details
+      width: 100%
+      .contact-details-items
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        align-items: flex-start
+    .contact-svg
+      width: 0
+
+  footer
+    width: 100%
+    // background-image: url("https://images.wallpaperscraft.com/image/single/mountain_rock_stones_1138455_2560x1440.jpg")
+    background-image: url("/assets/footer-phone.png")
+    margin: 0
+    img
+      display: none
+      background-size: 50% 50%
+      background-position: center
+    .footer-float
+      position: relative
+      background-color: #191919
+      padding: 20px
+      .footer-links
+        a
+          font-weight: 600
+          color: aliceblue
+
+/* All Key Frames */
+@keyframes circle-in-hesitate
+  0%
     clip-path: circle(0%)
-  40% 
+  40%
     clip-path: circle(40%)
-  100% 
+  100%
     clip-path: circle(125%)
 
-[transition-style="in:circle:hesitate"] 
+[transition-style="in:circle:hesitate"]
   animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both
