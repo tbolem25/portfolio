@@ -1,4 +1,4 @@
-.navbar
+.navbar-mine
   // top: 0
   // background-color: transparent
   // position: sticky
@@ -8,6 +8,8 @@
   align-content: center
   justify-content: space-between
   margin: auto
+  .navbar
+    display: none
   h1
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%)
     background-clip: text
@@ -129,20 +131,26 @@
   padding: 20px
   align-items: center
   margin: 25px auto 20px
-  background-color: #cccccc
+  background-color: #EFE7BC
   border-radius: 10px
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
   .contact-details
     width: 40%
-    background-color: #eeeeee
+    background-color: #74BDCB
     padding: 40px 30px
     border-radius: 10px
     overflow: hidden
     border: 2px solid black
     animation: circle-in-hesitate 5s
     h1
+      background-color: #FFA384
+      color: aliceblue
       font-weight: bold
       font-size: 4vw
+      border-radius: 5px
+      width: 60%
+      padding: 0 15px
+      margin: 0 auto 0 0
     .contact-details-items
       width: 80%
       padding: 15px
@@ -153,7 +161,7 @@
       a, address
         text-decoration: none
         font-weight: bold
-        color: #555555
+        color: black
         svg
           padding: 5px
           width: 30px
@@ -193,20 +201,23 @@ footer
 
 /* Styles for Phone*/
 @media screen and (max-width: 600px)
-  .navbar
+  .navbar-mine
     display: flex
-    flex-direction: column
-    justify-content: center
-    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-between
+    width: 100%
+    .navbar
+      display: block
     h1
       margin: 5px 5px 10px
-      font-size: 5vw
+      font-size: 8vw
+      padding: 4px 10px 0
     .nav-links
-      width: 80%
-      padding: 3px 10px
+      display: none
+    .offcanvas-body
       a
-        font-size: 11px
-        padding: 2px 5px
+        font-weight: bold
+        font-size: 16px
   .welcome
     .welcome-text
       width: 40%
@@ -236,6 +247,10 @@ footer
     margin: 25px auto 20px
     .contact-details
       width: 100%
+      h1
+        font-size: 6vw
+        padding: 5px
+        width: 50%
       .contact-details-items
         width: 100%
         display: flex
