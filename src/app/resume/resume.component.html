@@ -1,0 +1,12 @@
+<h2>Projects</h2>
+<div *ngFor="let project of projects">
+  <ng-container *ngTemplateOutlet="projectTemplate; context: {$implicit: project}"></ng-container>
+</div>
+
+<ng-template #projectTemplate let-project>
+  <h3>{{ project.companyName }}</h3>
+  <p>{{ project.timePeriod }}</p>
+  <ul>
+    <li *ngFor="let point of project.workPoints">{{ point }}</li>
+  </ul>
+</ng-template>
