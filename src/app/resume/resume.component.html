@@ -1,12 +1,19 @@
-<h2>Projects</h2>
-<div *ngFor="let project of projects">
-  <ng-container *ngTemplateOutlet="projectTemplate; context: {$implicit: project}"></ng-container>
+<div class="projects">
+  <h2>Projects</h2>
+  <div *ngFor="let project of projects">
+    <ng-container *ngTemplateOutlet="projectTemplate; context: {$implicit: project}"></ng-container>
+  </div>
+
+  <ng-template #projectTemplate let-project>
+    <div class="resume">
+      <h3>{{ project.companyName }}</h3>
+        <p><i>{{ project.timePeriod }}</i></p>
+      <h3>{{ project.roleName}}</h3>
+      <ul>
+        <li *ngFor="let point of project.workPoints">{{ point }}</li>
+      </ul>
+    </div>
+  </ng-template>
 </div>
 
-<ng-template #projectTemplate let-project>
-  <h3>{{ project.companyName }}</h3>
-  <p>{{ project.timePeriod }}</p>
-  <ul>
-    <li *ngFor="let point of project.workPoints">{{ point }}</li>
-  </ul>
-</ng-template>
+
