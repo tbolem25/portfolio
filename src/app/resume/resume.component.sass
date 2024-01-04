@@ -1,38 +1,33 @@
 .projects
-  font-family: -apple-system
-  width: 90%
-  margin: auto
-  background-color: antiquewhite
   display: flex
   flex-direction: column
-  justify-content: space-between
+  justify-content: space-evenly
   align-items: center
+  background: linear-gradient(to right, #bdc3c7, #2c3e50)
+  color: white
+  width: 90%
+  height: 70vh
+  margin: auto
   border-radius: 10px
-  padding: 20px 10px
   h2
-    background: linear-gradient(to right, #159957, #155799)
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364)
+    font-family: Jenthill, sans-serif
     background-clip: text
     color: transparent
-    font-size: 28px
-    font-weight: bold
-    font-family: Jenthill, sans-serif
+    padding: 3px
+    font-size: 4vw
   .resume
-    display: flex
-    flex-direction: row
-    justify-content: center
+    width: 50%
+    margin: auto
+    text-align: center
     align-items: center
-    background-color: #f0f0f0 // Change the color to your preference
-    padding: 10px
-    border-radius: 5px
-    margin-bottom: 15px
-    h3
-      font-size: 18px
-      color: #007bff // Change the color to your preference
-      margin-bottom: 5px
-    p
-      font-size: 14px
-      color: #888
-      margin-bottom: 10px
 
-
-
+@media screen and (max-width: 600px)
+  .projects
+    padding: 20px
+    height: auto
+    overflow: hidden
+    h2
+      font-size: 7vw
+    .resume
+      width: 70%
