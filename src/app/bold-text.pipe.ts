@@ -23,10 +23,4 @@ export class BoldTextPipe implements PipeTransform {
 
     return value;
   }
-
-  /*transform(value: string): string {
-    // Replace "Full Stack Java Developer" with the bold version
-    const boldText = '<strong>Senior Java Developer</strong>';
-    return value.replace('Senior Java Developer', boldText);
-  }*/
 }

@@ -45,140 +45,6 @@
 nav
   display: none
 
-/* Welcome section*/
-.welcome
-  display: flex
-  justify-content: center
-  align-content: center
-  width: 90%
-  height: auto
-  margin: 20px auto
-  color: #05445E
-  background: linear-gradient(to right, #43C6AC, #191654)
-  padding: 35px
-  border-radius: 10px
-  gap: 10px
-  flex-wrap: nowrap
-  overflow: hidden
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  .wel-text
-    display: flex
-    flex-direction: column
-    align-content: center
-    justify-content: center
-    padding-left: 20px
-    width: 60%
-    h1
-      color: white
-      font-weight: bolder
-      font-size: 4vw
-      i
-        color: black
-    h2
-      font-weight: bold
-      font-size: 3vw
-  .welcome-img
-    width: 40%
-    img
-      max-width: 300px
-      height: 300px
-      border-radius: 50%
-      object-fit: cover
-
-/* About me section*/
-.introduction
-  background: linear-gradient(to bottom, #0f0c29, #302b63, #2C5364)
-  padding: 20px
-  margin: 30px auto 20px
-  h1
-    color: aliceblue
-    font-family: Jenthill, sans-serif
-    text-align: center
-    border-radius: 5px
-    font-size: 4vw
-    width: 30vw
-    margin: auto
-    padding: 10px 5px 0
-  .intro
-    width: 100%
-    height: auto
-    margin: 20px 0 0
-    padding: 15px 10px
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-    align-items: center
-    .intro-matter
-      display: flex
-      flex-direction: column
-      justify-content: space-between
-      width: 50%
-      margin: auto
-      padding: 5px
-      border-radius: 10px
-      p
-        background-color: #C4DBE0
-        border-radius: 8px
-        margin: 10px 0 0
-        font-size: 20px
-        padding: 10px
-    .intro-svg
-      width: 50%
-      img
-        width: 100%
-        height: auto
-
-/* Contact styles*/
-.contact
-  width: 90%
-  display: flex
-  justify-content: space-around
-  gap: 10px
-  padding: 40px
-  align-items: center
-  margin: 25px auto 25px
-  background: linear-gradient(to top, #1D976C, #93F9B9)
-  border-radius: 10px
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  .contact-details
-    width: 40%
-    background-color: #8ADAB2
-    padding: 40px 30px
-    border-radius: 10px
-    overflow: hidden
-    border: 2px solid black
-    animation: circle-in-hesitate 5s
-    h1
-      color: #EFEBE0
-      font-family: Jenthill, sans-serif
-      font-weight: bold
-      font-size: 4vw
-      border-radius: 5px
-      padding: 0 15px
-      margin: 0 auto 0 0
-    .contact-details-items
-      width: 80%
-      padding: 15px
-      text-align: center
-      display: flex
-      justify-content: flex-start
-      margin: auto
-      a, address
-        text-decoration: none
-        font-weight: bold
-        color: black
-        svg
-          padding: 5px
-          width: 30px
-          height: 30px
-          background-color: black
-          color: white
-          border-radius: 50%
-  .contact-svg
-    width: 50%
-    img
-      width: 100%
-
 /* Footer styles */
 footer
   width: 100%
@@ -195,11 +61,13 @@ footer
     position: absolute
     bottom: 0
     left: 0
-    padding: 10px 30px 10px 50px
+    padding: 10px 50px 20px 60px
     a
       text-decoration: none
       color: Black
       font-weight: bold
+    a:hover
+      color: white
     .footer-links
       display: flex
       flex-direction: column
@@ -226,51 +94,8 @@ footer
         font-size: 4.5vw
         color: #647D87
         font-weight: 500
-  .welcome
-    margin: 70px auto 20px
-    padding: 15px
-    .welcome-text
-      width: 40%
-      padding-right: 10px
-    .welcome-img
-      width: 60%
-      img
-        width: 40vw
-        height: 19vh
-        border-radius: 50%
-        object-fit: cover
-  .introduction
-    h1
-      font-size: 7vw
-      width: 100%
-    .intro
-      display: flex
-      flex-direction: column
-      .intro-svg
-        width: 90%
-        margin: auto
-      .intro-matter
-        width: 95%
-        margin: auto
-        ul
-          padding: 0
-  .contact
-    gap: 10px
-    margin: 25px auto
-    .contact-details
-      width: 100%
-      h1
-        font-size: 7vw
-        padding: 5px
-        width: 50%
-      .contact-details-items
-        width: 100%
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-    .contact-svg
-      width: 0
+
+
 
   footer
     width: 100%
