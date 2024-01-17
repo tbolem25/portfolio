@@ -57,20 +57,34 @@ footer
   .footer-float
     width: 100%
     display: flex
-    justify-content: space-between
+    flex-direction: column
+    justify-content: center
+    align-items: center
     position: absolute
     bottom: 0
     left: 0
-    padding: 10px 50px 20px 60px
-    a
-      text-decoration: none
-      color: Black
-      font-weight: bold
-    a:hover
-      color: white
-    .footer-links
+    // padding: 10px 50px 20px 60px
+    .signature
+      width: 95%
       display: flex
-      flex-direction: column
+      flex-direction: row
+      justify-content: space-between
+      .footer-links
+        display: flex
+        flex-direction: column
+      a
+        text-decoration: none
+        color: Black
+        font-weight: bold
+      a:hover
+        color: white
+    .signature-text
+      font-size: 18px
+      font-weight: bold
+      color: black
+      font-family: -apple-system
+      p
+        margin-bottom: 0
 
 /* Styles for Phone*/
 @media screen and (max-width: 600px)
@@ -94,24 +108,24 @@ footer
         font-size: 4.5vw
         color: #647D87
         font-weight: 500
-
-
-
   footer
     width: 100%
     margin: 0
     img
       display: none
-      background-size: 50% 50%
-      background-position: center
     .footer-float
       position: relative
       background: linear-gradient(to bottom, #000000, #243B55)
-      padding: 20px
+      padding: 15px
       .footer-links
         a
           font-weight: 600
-          color: aliceblue
+          color: white
+      .signature-text
+        color: aliceblue
+        p
+          margin-top: 15px
+          font-size: 16px
 
 /* All Key Frames */
 @keyframes circle-in-hesitate
