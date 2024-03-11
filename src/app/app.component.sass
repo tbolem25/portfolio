@@ -49,42 +49,63 @@ nav
 footer
   width: 100%
   height: auto
+  background: linear-gradient(to bottom, #000000, #243B55)
   position: relative
-  img
-    width: 100%
-    height: 40vh
-    object-fit: fill
   .footer-float
-    width: 100%
+    width: 80%
+    margin: auto
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
-    position: absolute
-    bottom: 0
-    left: 0
+    position: relative
+    padding: 10px
     // padding: 10px 50px 20px 60px
     .signature
-      width: 95%
+      width: 100%
       display: flex
-      flex-direction: row
-      justify-content: space-between
+      flex-direction: column
+      margin: 20px 0
       .footer-links
+        width: 50%
+        margin: 10px auto
         display: flex
-        flex-direction: column
-      a
-        text-decoration: none
-        color: Black
-        font-weight: bold
-      a:hover
-        color: white
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        a
+          color: white
+          svg
+            width: 32px
+            height: 32px
+      .footer-nav
+        width: 50%
+        margin: 10px auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding: 5px 20px
+        background-color: #36454F
+        border-radius: 5px
+        a
+          text-decoration: none
+          color: white
+          font-weight: bold
+          font-size: 20px
+          padding: 0 10px
+        a:hover
+          background-color: white
+          padding: 0 10px
+          color: #4DADFA
+          border-radius: 5px
     .signature-text
-      font-size: 18px
+      font-size: 14px
       font-weight: bold
-      color: black
+      color: #40E0D0
       font-family: -apple-system
       p
         margin-bottom: 0
+
 
 /* Styles for Phone*/
 @media screen and (max-width: 600px)
@@ -109,23 +130,24 @@ footer
         color: #647D87
         font-weight: 500
   footer
-    width: 100%
-    margin: 0
-    img
-      display: none
     .footer-float
-      position: relative
-      background: linear-gradient(to bottom, #000000, #243B55)
-      padding: 15px
-      .footer-links
-        a
-          font-weight: 600
-          color: white
-      .signature-text
-        color: aliceblue
-        p
-          margin-top: 15px
-          font-size: 16px
+      .signature
+        .footer-links
+          width: 80%
+          margin: auto
+          padding: 10px 0
+          a
+            svg
+              width: 26px
+              height: 26px
+        .footer-nav
+          width: 90%
+          margin: 10px auto 0
+          padding: 5px 0
+          justify-content: space-evenly
+          a
+            font-size: 18px
+
 
 /* All Key Frames */
 @keyframes circle-in-hesitate
